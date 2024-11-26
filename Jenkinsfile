@@ -13,7 +13,7 @@ pipeline {
         }
         stage('Run Docker Container') {
             steps {
-                sh 'docker run -d -p 8081:8080 --name my-app your-app:latest'
+                sh 'docker run -d -p 8080:8080 --name my-app your-app:latest'
             }
         }
     }
